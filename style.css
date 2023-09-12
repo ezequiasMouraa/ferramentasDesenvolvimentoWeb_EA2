@@ -1,0 +1,63 @@
+/* Reset de margens e preenchimentos para remover as configurações padrão do navegador */
+body, h1, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilização do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Cor de fundo do tema light */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Estilização do card */
+form {
+    background-color: #fff; /* Cor de fundo do card */
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 300px;
+    padding: 20px;
+}
+
+/* Estilização dos rótulos e entradas de texto */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Cor do texto */
+}
+
+input[type="email"],
+input[type="password"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Cor da borda */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Estilização dos botões */
+input[type="submit"] {
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+input[type="submit"][name="entrar"] {
+    background-color: green; /* Cor de fundo do botão Sair */
+}
+
+input[type="submit"][name="sair"] {
+    background-color: red; /* Cor de fundo do botão Sair */
+}
